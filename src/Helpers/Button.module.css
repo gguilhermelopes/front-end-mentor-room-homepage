@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--black);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover,
+.button:active {
+  background-color: var(--very-dark-gray);
+}
