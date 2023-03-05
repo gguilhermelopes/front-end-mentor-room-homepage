@@ -9,13 +9,13 @@
 }
 
 .slideInfo h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
 
 .slideInfo p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.3;
   color: var(--dark-gray);
   margin-bottom: 2rem;
@@ -52,4 +52,10 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+@media (max-width: 1320px) {
+  .slideInfo {
+    padding: 6rem 4rem;
+  }
 }

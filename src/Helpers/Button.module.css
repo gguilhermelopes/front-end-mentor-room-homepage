@@ -2,14 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  padding: 2.675rem;
   background-color: var(--black);
   cursor: pointer;
   transition: 0.3s;
+  border: 1px solid transparent;
 }
 
 .button:hover,
 .button:active {
   background-color: var(--very-dark-gray);
+}
+
+.button:disabled {
+  background: var(--dark-gray);
+  cursor: not-allowed;
+}
+
+@media (max-width: 1400px) {
+  .button {
+    padding: 2.2vw;
+  }
 }
