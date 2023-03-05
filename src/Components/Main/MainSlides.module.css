@@ -36,10 +36,15 @@
   width: 5rem;
   background: url("../../Helpers/images/icon-arrow.svg") no-repeat center center;
   margin-left: 2rem;
+  transition: 0.3s;
 }
 
 .slideInfo a:hover {
   color: var(--dark-gray);
+}
+
+.slideInfo a:hover:after {
+  margin-left: 4rem;
 }
 
 .buttonWrapper {
