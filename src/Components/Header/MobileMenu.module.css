@@ -1,0 +1,53 @@
+.mobileMenuWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mobileMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+  padding: 4rem 2rem;
+  padding-right: 4rem;
+  transform: translateY(-2rem);
+  opacity: 0;
+  animation: showMobile 0.3s forwards;
+}
+
+.mobileMenu ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.mobileMenu ul li a {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.mobileMenu ul li a:hover,
+.mobileMenu ul li a:active {
+  color: var(--dark-gray);
+}
+
+.closeButton {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeButton:hover,
+.closeButton:active {
+  transform: scale(1.3);
+}
+
+@keyframes showMobile {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
