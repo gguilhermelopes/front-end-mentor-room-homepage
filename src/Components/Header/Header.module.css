@@ -50,3 +50,10 @@
     padding: 2.5rem;
   }
 }
+
+@media (max-width: 620px) {
+  .header {
+    width: 100vw;
+    justify-content: space-between;
+  }
+}

@@ -46,3 +46,15 @@
     grid-row: 1 / 2;
   }
 }
+
+@media (max-width: 620px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .aboutInfo {
+    grid-row: initial;
+  }
+  .aboutInfo h2 {
+    font-size: 1rem;
+  }
+}
